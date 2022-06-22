@@ -1,3 +1,8 @@
-function hero(){
-    alert("You just landed on Divyanshu's page!");
+function greet(){
+    alert('hi there');
 }
+
+const b=document.querySelector('button');
+
+b.addEventListener('click',greet);
+
