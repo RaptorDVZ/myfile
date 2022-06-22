@@ -1,0 +1,16 @@
+ p{
+  text-align: center;
+  border: 3px solid green;
+  max-width: 300px;
+  align-items: center;
+  margin-left: 450px;
+  
+
+}
+
+button{
+    text-align: center;
+/*margin-left: 500px;*/
+    margin-right: 10px;
+    
+}
