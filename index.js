@@ -1,12 +1,14 @@
-function greet(){
-    alert('Hi there thank you for choosing our service!');
-}
+const express = require("express");
 
-function bye(){
-    alert('Oh shuks, but Hope to see you onboard next time!');
-}
-const b=document.getElementById('one');
-const b1=document.getElementById('two');
-b.addEventListener('click',greet);
-b1.addEventListener('click',bye);
+const app = express();
+
+const port= process.env.PORT || 3000;
+
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname+"/index.html")
+})
+
+app.listen(3000,()=>{
+    console.log(`The server has started at port ${port}`);
+})
 
